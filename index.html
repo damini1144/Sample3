@@ -3,62 +3,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Learn Trading</title>
+  <title>Join the Stock Group</title>
   <link rel="stylesheet" href="style.css" />
-  <script>
-    let seconds = 3;
-    function updateCountdown() {
-      const timer = document.getElementById("timer");
-      timer.innerText = seconds;
-      if (seconds === 0) {
-        window.location.href = "join.html";
-      }
-      seconds--;
-    }
-
-    window.onload = () => {
-      updateCountdown();
-      setInterval(updateCountdown, 1000);
-    };
-  </script>
 </head>
-<body class="blue-page">
+<body class="red-clean">
+  <div class="overlay"></div>
   <div class="card">
-    <h1>Learn Stock Market Trading<br><span class="highlight">with an Experienced Expert</span></h1>
-    <p class="intro">
-      Start your trading journey the right way – don’t miss these free resources.
-    </p>
+    <h1>Don’t Miss the Next M'Stock tips</h1>
+    <p class="subhead">Join our trading community led by a proven market expert.</p>
 
-    <div class="features">
-      <div class="feature">
-        <span class="icon">📈</span>
-        <div>
-          <h3>Trading tips and strategies</h3>
-          <p>Gain valuable insights into market trends and techniques.</p>
-        </div>
-      </div>
-      <div class="feature">
-        <span class="icon">🎥</span>
-        <div>
-          <h3>Educational webinars</h3>
-          <p>Watch live or on-demand sessions at your convenience.</p>
-        </div>
-      </div>
-      <div class="feature">
-        <span class="icon">📊</span>
-        <div>
-          <h3>Market insights reports</h3>
-          <p>Stay informed with the latest stock market developments.</p>
-        </div>
-      </div>
+    <div class="expert-photo-wrap">
+      <img src="instructor.png" alt="Expert Photo" class="expert-photo" />
+      <p class="expert-name">15+ Years of Experience</p>
     </div>
 
-    <p class="disclaimer">Disclaimer: Educational use only. Trading involves risk.</p>
+    <ul class="clean-list">
+      <li><strong>Weekly hot stock picks</strong></li>
+      <li><strong>Real-time buy alerts</strong></li>
+      <li><strong>Market insights from a pro</strong></li>
+    </ul>
 
-    <div class="redirect-info">
-      <p>Redirecting in <span id="timer">3</span> seconds...</p>
-      <p><a href="join.html" class="button green-button">Click here if not redirected</a></p>
-    </div>
+    <a href="https://chat.whatsapp.com/YOUR-GROUP-LINK" target="_blank" class="button green-button">
+      Join the WhatsApp Group Now
+    </a>
   </div>
 </body>
 </html>
