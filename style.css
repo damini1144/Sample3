@@ -1,0 +1,101 @@
+/* Base styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+
+/* Card container */
+.card {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.4);
+  max-width: 500px;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+/* Headings and text */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.subhead {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #ddd;
+}
+
+.clean-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 30px;
+}
+
+.clean-list li {
+  font-size: 1rem;
+  margin-bottom: 12px;
+}
+
+/* Expert image */
+.expert-photo-wrap {
+  margin: 20px 0;
+}
+
+.expert-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.expert-name {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #ffeb3b;
+}
+
+/* Button */
+.button {
+  display: inline-block;
+  padding: 14px 26px;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.green-button {
+  background-color: #25d366;
+  color: white;
+}
+
+.green-button:hover {
+  background-color: #1da851;
+}
+
+/* Background with overlay */
+.red-clean {
+  background: url('https://images.unsplash.com/photo-1620207418302-439b387441b0?auto=format&fit=crop&w=1500&q=80') no-repeat center center/cover;
+  position: relative;
+}
+
+.red-clean .overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}

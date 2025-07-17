@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Learn Trading</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    let seconds = 3;
+    function updateCountdown() {
+      const timer = document.getElementById("timer");
+      timer.innerText = seconds;
+      if (seconds === 0) {
+        window.location.href = "join.html";
+      }
+      seconds--;
+    }
+
+    window.onload = () => {
+      updateCountdown();
+      setInterval(updateCountdown, 1000);
+    };
+  </script>
+</head>
+<body class="blue-page">
+  <div class="card">
+    <h1>Learn Stock Market Trading<br><span class="highlight">with an Experienced Expert</span></h1>
+    <p class="intro">
+      Start your trading journey the right way – don’t miss these free resources.
+    </p>
+
+    <div class="features">
+      <div class="feature">
+        <span class="icon">📈</span>
+        <div>
+          <h3>Trading tips and strategies</h3>
+          <p>Gain valuable insights into market trends and techniques.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <span class="icon">🎥</span>
+        <div>
+          <h3>Educational webinars</h3>
+          <p>Watch live or on-demand sessions at your convenience.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <span class="icon">📊</span>
+        <div>
+          <h3>Market insights reports</h3>
+          <p>Stay informed with the latest stock market developments.</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="disclaimer">Disclaimer: Educational use only. Trading involves risk.</p>
+
+    <div class="redirect-info">
+      <p>Redirecting in <span id="timer">3</span> seconds...</p>
+      <p><a href="join.html" class="button green-button">Click here if not redirected</a></p>
+    </div>
+  </div>
+</body>
+</html>
