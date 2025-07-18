@@ -13,7 +13,7 @@ body {
 
 /* Card container */
 .card {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(230, 101, 84, 0.6);
   padding: 40px 30px;
   border-radius: 16px;
   box-shadow: 0 0 25px rgba(0,0,0,0.4);
@@ -98,4 +98,9 @@ h1 {
   position: absolute;
   inset: 0;
   z-index: 1;
+}
+.red-theme {
+  background: url("your-image.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: white;
 }
